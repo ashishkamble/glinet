@@ -19,9 +19,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@master
-        with:
-          ref: master
+        run:
+          git clone --branch test-runner git@github.com:ashishkamble/glinet.git
+          cd glinet
 
       - name: Space cleanup
         env:
