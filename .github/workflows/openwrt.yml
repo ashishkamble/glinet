@@ -9,15 +9,13 @@
 
 name: OpenWrt-CI
 
-on:
-  schedule:
-    - cron: 0 20 * * *
+on: push
 
 jobs:
 
   build:
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
