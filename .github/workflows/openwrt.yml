@@ -29,10 +29,10 @@ jobs:
           cd glinet
           git checkout test_runner
 
-      - name: Space cleanup
-        env:
-          DEBIAN_FRONTEND: noninteractive
-        run: |
+      #- name: Space cleanup
+        #env:
+          #DEBIAN_FRONTEND: noninteractive
+        #run: |
           #docker rmi `docker images -q`
           ##sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
           #sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
