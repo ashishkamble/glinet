@@ -24,13 +24,9 @@ jobs:
           pwd
           ls
       - name: Checkout
-        run: |
-          #git clone git@github.com:ashishkamble/glinet.git
-          cd glinet
-          #git checkout test_runner
-          git status
-          git log -2
-
+        uses: actions/checkout@test_runner
+        with:
+          ref: master
       #- name: Space cleanup
         #env:
           #DEBIAN_FRONTEND: noninteractive
