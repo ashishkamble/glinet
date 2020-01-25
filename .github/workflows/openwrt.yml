@@ -24,7 +24,7 @@ jobs:
           pwd
           ls
       - name: Checkout
-        uses: actions/checkout@test_runner
+        uses: actions/checkout@master
         with:
           ref: master
       #- name: Space cleanup
