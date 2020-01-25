@@ -18,10 +18,16 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      -name: Print pwd
+        run: |
+          uname -a
+          pwd
+          ls
       - name: Checkout
         run: |
-          git clone --branch test-runner git@github.com:ashishkamble/glinet.git
+          git clone git@github.com:ashishkamble/glinet.git
           cd glinet
+          git Checkout test-runner
 
       - name: Space cleanup
         env:
