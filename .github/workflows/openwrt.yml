@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout
-        run:
+        run: |
           git clone --branch test-runner git@github.com:ashishkamble/glinet.git
           cd glinet
 
